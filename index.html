@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="shortcut icon" href="./media/DOM 3.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -20,9 +22,12 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boombox-fill" viewBox="0 0 16 16">
-                        <path d="M14.5.5a.5.5 0 0 0-1 0V2H1a1 1 0 0 0-1 1v2h16V3a1 1 0 0 0-1-1h-.5V.5ZM2.5 4a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm7.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm-7-1h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm-2 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm.5-1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm6.5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm0-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/>
-                        <path d="M16 6H0v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6ZM4.5 13a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm7 0a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-boombox-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M14.5.5a.5.5 0 0 0-1 0V2H1a1 1 0 0 0-1 1v2h16V3a1 1 0 0 0-1-1h-.5V.5ZM2.5 4a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm7.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm-7-1h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm-2 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm.5-1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm6.5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm0-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z" />
+                        <path
+                            d="M16 6H0v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6ZM4.5 13a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm7 0a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" />
                     </svg>
                 </div>
             </div>
@@ -36,29 +41,80 @@
         </div>
     </header>
     <main>
-        <div class="piano"></div>
+        <div class="piano">
+            <div data-note="q" class="tecla blanco"></div>
+            <div data-note="2" class="tecla negro"></div>
+            <div data-note="w" class="tecla tecla blanco n"></div>
+            <div data-note="3" class="tecla negro"></div>
+            <div data-note="e" class="tecla tecla blanco n"></div>
+            <div data-note="r" class="tecla blanco"></div>
+            <div data-note="5" class="tecla negro"></div>
+            <div data-note="t" class="tecla tecla blanco n"></div>
+            <div data-note="6" class="tecla negro"></div>
+            <div data-note="y" class="tecla tecla blanco n"></div>
+            <div data-note="7" class="tecla negro"></div>
+            <div data-note="u" class="tecla tecla blanco n"></div>
+            <div data-note="z" class="tecla blanco"></div>
+            <div data-note="s" class="tecla negro"></div>
+            <div data-note="x" class="tecla tecla blanco n"></div>
+            <div data-note="d" class="tecla negro"></div>
+            <div data-note="c" class="tecla tecla blanco n"></div>
+            <div data-note="v" class="tecla blanco"></div>
+            <div data-note="g" class="tecla negro"></div>
+            <div data-note="b" class="tecla tecla blanco n"></div>
+            <div data-note="h" class="tecla negro"></div>
+            <div data-note="n" class="tecla tecla blanco n"></div>
+            <div data-note="j" class="tecla negro"></div>
+            <div data-note="m" class="tecla tecla blanco n"></div>
+        </div>
+
+        <audio id="q" src="audio/q.mp3"></audio>
+        <audio id="2" src="audio/2.mp3"></audio>
+        <audio id="w" src="audio/w.mp3"></audio>
+        <audio id="3" src="audio/3.mp3"></audio>
+        <audio id="e" src="audio/e.mp3"></audio>
+        <audio id="r" src="audio/r.mp3"></audio>
+        <audio id="5" src="audio/5.mp3"></audio>
+        <audio id="t" src="audio/t.mp3"></audio>
+        <audio id="6" src="audio/6.mp3"></audio>
+        <audio id="y" src="audio/y.mp3"></audio>
+        <audio id="7" src="audio/7.mp3"></audio>
+        <audio id="u" src="audio/u.mp3"></audio>
+        <audio id="z" src="audio/z.mp3"></audio>
+        <audio id="s" src="audio/s.mp3"></audio>
+        <audio id="x" src="audio/x.mp3"></audio>
+        <audio id="d" src="audio/d.mp3"></audio>
+        <audio id="c" src="audio/c.mp3"></audio>
+        <audio id="v" src="audio/v.mp3"></audio>
+        <audio id="g" src="audio/g.mp3"></audio>
+        <audio id="b" src="audio/b.mp3"></audio>
+        <audio id="h" src="audio/h.mp3"></audio>
+        <audio id="n" src="audio/n.mp3"></audio>
+        <audio id="j" src="audio/j.mp3"></audio>
+        <audio id="m" src="audio/m.mp3"></audio>
+
         <div class="opciones">
             <button class="acordion">¿Como se usa?</button>
             <div class="text bg-modal">
                 <div class="modal">
                     <div class="close"></div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus voluptatem tempore 
-                    libero at corrupti laudantium ipsa voluptatibus cum ab saepe. Architecto molestiae nihil 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus voluptatem tempore
+                    libero at corrupti laudantium ipsa voluptatibus cum ab saepe. Architecto molestiae nihil
                     necessitatibus impedit et explicabo quam iste sunt.
                 </div>
             </div>
             <button class="acordion">Partituras faciles</button>
             <p class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus voluptatem tempore 
-                libero at corrupti laudantium ipsa voluptatibus cum ab saepe. Architecto molestiae nihil 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus voluptatem tempore
+                libero at corrupti laudantium ipsa voluptatibus cum ab saepe. Architecto molestiae nihil
                 necessitatibus impedit et explicabo quam iste sunt.
             </p>
             <button class="acordion">Video tutorial</button>
             <div class="text bg-modal">
                 <div class="modal">
                     <div class="close"></div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus voluptatem tempore 
-                    libero at corrupti laudantium ipsa voluptatibus cum ab saepe. Architecto molestiae nihil 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus voluptatem tempore
+                    libero at corrupti laudantium ipsa voluptatibus cum ab saepe. Architecto molestiae nihil
                     necessitatibus impedit et explicabo quam iste sunt.
                 </div>
             </div>
@@ -67,5 +123,7 @@
     <footer>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/piano.js"></script>
 </body>
+
 </html>
