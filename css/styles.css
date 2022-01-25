@@ -21,13 +21,19 @@ body {
 
 .container-menu,
 .bi {
-    margin: 20px 0 0 20px;
-    display: inline-block;
+    z-index: 5;
     cursor: pointer;
     width: 65px;
     height: 58px;
     border-radius: 5px;
     background-color: var(--dark-blue);
+}
+
+.container-menu{
+    position: fixed;
+    top: 0;
+    display: inline-block;
+    margin: 20px 0 0 20px;
 }
 
 .line1,
@@ -56,17 +62,19 @@ body {
     display: none;
 }
 
-.Active .bi {
-    margin-top: 3vh;
-    display: flex;
+.Active img{
+    display: block;
 }
 
 .title {
+    scroll-margin-top: 10px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
 }
 
 .titleDrum{
+    scroll-margin-top: 5px;
     display: flex;
     justify-content: center;
     margin-top: 60px;
@@ -80,6 +88,17 @@ body {
     text-align: center;
     color: var(--gray-white);
     margin-right: 1vw;
+    box-shadow: 0 0 3px rgba(51, 48, 0,1), 0 0px 18px #FCCB7E;
+    text-shadow: 0 0 3px rgba(51, 48, 0,1), 0 0px 18px #FCCB7E;
+    animation: blinkLetters;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinkLetters {
+    0% { box-shadow:  0 0 3px rgba(51, 48, 0,1), 0 0px 18px #FCCB7E; }
+    50% { box-shadow: 0 0 3px rgba(51, 48, 0,1), 0 0px 18px #FCCB7E, 0px 0px 24px #FCCB7E; }
+    100% { box-shadow: 0 0 3px rgba(51, 48, 0,1), 0 0px 18px #FCCB7E; }
 }
 
 .l1 {
@@ -150,7 +169,6 @@ body {
     background: linear-gradient(to bottom, #fff 0%, #e9e9e9 100%)
 }
 
-
 .negro:active {
     box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -2px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
     background: linear-gradient(to right, #444 0%, #222 100%)
@@ -159,7 +177,6 @@ body {
 .n {
     margin: 0 0 0 -.7em
 }
-
 
 .acordion {
     cursor: pointer;
@@ -191,7 +208,7 @@ svg{
     width: 80vw;
     height: fit-content;
     margin: auto;
-    margin: 70px auto 70px auto;
+    margin: 30px auto 30px auto;
 }
 
 #Component\ 13, #Component\ 16, #cymbal3, .inner{
@@ -245,6 +262,10 @@ footer{
 }
 
 @media screen and (min-width: 768px) {
+    .bi .Active{
+        display: inline-flex;
+    }
+
     .opciones {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

@@ -11,6 +11,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
+        <script>
+            window.addEventListener("load",(e)=>{
+            window.location.hash = "#piano"
+        })
+        </script>
 </head>
 <body>
     <header>
@@ -19,25 +24,22 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
+                <a href="#piano">
+                    <img class="bi" src="https://img.icons8.com/clouds/100/000000/piano.png"/>
+                </a>
                 <a href="#bateria">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-boombox-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M14.5.5a.5.5 0 0 0-1 0V2H1a1 1 0 0 0-1 1v2h16V3a1 1 0 0 0-1-1h-.5V.5ZM2.5 4a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm7.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm-7-1h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm-2 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm.5-1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm6.5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm0-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z" />
-                        <path
-                            d="M16 6H0v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6ZM4.5 13a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm7 0a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" />
-                    </svg>
+                    <img class="bi" src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-drum-rock-and-roll-justicon-flat-justicon.png"/>
                 </a>
             </div>
         </nav>
-        <div class="title">
-            <div class="container-letter l1">P</div>
-            <div class="container-letter l2">I</div>
-            <div class="container-letter l3">A</div>
-            <div class="container-letter l4">N</div>
-            <div class="container-letter l5">O</div>
-        </div>
     </header>
+    <div class="title" id="piano">
+        <div class="container-letter l1">P</div>
+        <div class="container-letter l2">I</div>
+        <div class="container-letter l3">A</div>
+        <div class="container-letter l4">N</div>
+        <div class="container-letter l5">O</div>
+    </div>
     <main>
         <div class="piano">
             <div data-note="q" class="tecla blanco"></div>
