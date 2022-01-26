@@ -271,8 +271,8 @@ svg {
     transform: scale(1.01);
 }
 
-footer {
-    margin-top: 70px;
+footer{
+    margin-top: 170px;
     width: 100%;
     height: 120px;
     bottom: 0;
@@ -286,24 +286,32 @@ footer {
     align-items: center;
 }
 
-.close {
+
+.principal{
+    margin-top: 270px;
+}
+
+.close{
     display: none;
 }
 
-.video-container {
+.video-container, .image-container, .partitura-img{
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
 }
 
-.video-container iframe {
-    margin-top: 16px;
+.video-container iframe, .image-container img, .partitura-img img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.content{
+    display: none;
 }
 
 @media screen and (min-width: 640px) {
@@ -353,8 +361,6 @@ footer {
     .acordion {
         width: 50%;
     }
-
-
 
     .bg-modal {
         box-sizing: border-box;
@@ -425,8 +431,6 @@ footer {
     .n {
         margin: 0 0 0 -1.2em
     }
-
-}
 
 @media screen and (min-width: 1024px) {}
 
