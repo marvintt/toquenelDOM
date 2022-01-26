@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toquenelDOM - Piano Virtual</title>
+    <link rel="shortcut icon" href="./img/DOM 3.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <a href="../index.html">
+                    <img class="bi" src="https://img.icons8.com/bubbles/100/000000/home-page.png" />
+                </a>
+                <a href="../drum.html">
+                    <img class="bi"
+                        src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-drum-rock-and-roll-justicon-flat-justicon.png" />
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="title" id="piano">
+        <div class="container-letter l1">P</div>
+        <div class="container-letter l2">I</div>
+        <div class="container-letter l3">A</div>
+        <div class="container-letter l4">N</div>
+        <div class="container-letter l5">O</div>
+    </div>
+    <section>
+        <div class="piano">
+            <div data-note="q" class="tecla blanco"></div>
+            <div data-note="2" class="tecla negro"></div>
+            <div data-note="w" class="tecla tecla blanco n"></div>
+            <div data-note="3" class="tecla negro"></div>
+            <div data-note="e" class="tecla tecla blanco n"></div>
+            <div data-note="r" class="tecla blanco"></div>
+            <div data-note="5" class="tecla negro"></div>
+            <div data-note="t" class="tecla tecla blanco n"></div>
+            <div data-note="6" class="tecla negro"></div>
+            <div data-note="y" class="tecla tecla blanco n"></div>
+            <div data-note="7" class="tecla negro"></div>
+            <div data-note="u" class="tecla tecla blanco n"></div>
+            <div data-note="z" class="tecla blanco"></div>
+            <div data-note="s" class="tecla negro"></div>
+            <div data-note="x" class="tecla tecla blanco n"></div>
+            <div data-note="d" class="tecla negro"></div>
+            <div data-note="c" class="tecla tecla blanco n"></div>
+            <div data-note="v" class="tecla blanco"></div>
+            <div data-note="g" class="tecla negro"></div>
+            <div data-note="b" class="tecla tecla blanco n"></div>
+            <div data-note="h" class="tecla negro"></div>
+            <div data-note="n" class="tecla tecla blanco n"></div>
+            <div data-note="j" class="tecla negro"></div>
+            <div data-note="m" class="tecla tecla blanco n"></div>
+        </div>
+        <div class="opciones">
+            <button class="acordion">¿Como se usa?</button>
+            <div class="text bg-modal">
+                <div class="modal">
+                    <img class="close" src="https://img.icons8.com/ios-glyphs/30/000000/macos-close.png" />
+                    <p>Se puede tocar dando click o presionado las siguientes teclas:</p>
+                    <div class="keyModal">
+                        <kbd>Q</kbd>
+                        <p>Do,</p>
+                        <kbd>2</kbd>
+                        <p>Do#,</p>
+                        <kbd>W</kbd>
+                        <p>Re,</p>
+                        <kbd>3</kbd>
+                        <p>Re#,</p>
+                        <kbd>E</kbd>
+                        <p>Mi,</p>
+                        <kbd>R</kbd>
+                        <p>Fa,</p>
+                        <kbd>5</kbd>
+                        <p>Fa#,</p>
+                        <kbd>T</kbd>
+                        <p>Sol</p>
+                        <kbd>6</kbd>
+                        <p>Sol#,</p>
+                        <kbd>Y</kbd>
+                        <p>La,</p>
+                        <kbd>7</kbd>
+                        <p>La#,</p>
+                        <kbd>U</kbd>
+                        <p>Si,</p>
+                        <kbd>Z</kbd>
+                        <p>Do,</p>
+                        <kbd>S</kbd>
+                        <p>Do#,</p>
+                        <kbd>X</kbd>
+                        <p>Re,</p>
+                        <kbd>D</kbd>
+                        <p>Re#,</p>
+                        <kbd>C</kbd>
+                        <p>Mi,</p>
+                        <kbd>V</kbd>
+                        <p>Fa,</p>
+                        <kbd>G</kbd>
+                        <p>Fa#,</p>
+                        <kbd>B</kbd>
+                        <p>Sol</p>
+                        <kbd>H</kbd>
+                        <p>Sol#,</p>
+                        <kbd>N</kbd>
+                        <p>La,</p>
+                        <kbd>J</kbd>
+                        <p>La#,</p>
+                        <kbd>M</kbd>
+                        <p>Si</p>
+                    </div>
+                </div>
+            </div>
+            <button class="acordion">Partituras faciles</button>
+            <p class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus voluptatem tempore
+                libero at corrupti laudantium ipsa voluptatibus cum ab saepe. Architecto molestiae nihil
+                necessitatibus impedit et explicabo quam iste sunt.
+            </p>
+            <button class="acordion">Video tutorial</button>
+            <div class="text bg-modal">
+                <div class="modal">
+                    <img class="close" src="https://img.icons8.com/ios-glyphs/30/000000/macos-close.png" />
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3gZC5763wYk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;<br>Carlos Eduardo Martinez<br>Maria Jose Alba</p>
+    </footer>
+
+    <!-- Piano Sounds -->
+    <audio id="q" src="audio/q.mp3"></audio>
+    <audio id="2" src="audio/2.mp3"></audio>
+    <audio id="w" src="audio/w.mp3"></audio>
+    <audio id="3" src="audio/3.mp3"></audio>
+    <audio id="e" src="audio/e.mp3"></audio>
+    <audio id="r" src="audio/r.mp3"></audio>
+    <audio id="5" src="audio/5.mp3"></audio>
+    <audio id="t" src="audio/t.mp3"></audio>
+    <audio id="6" src="audio/6.mp3"></audio>
+    <audio id="y" src="audio/y.mp3"></audio>
+    <audio id="7" src="audio/7.mp3"></audio>
+    <audio id="u" src="audio/u.mp3"></audio>
+    <audio id="z" src="audio/z.mp3"></audio>
+    <audio id="s" src="audio/s.mp3"></audio>
+    <audio id="x" src="audio/x.mp3"></audio>
+    <audio id="d" src="audio/d.mp3"></audio>
+    <audio id="c" src="audio/c.mp3"></audio>
+    <audio id="v" src="audio/v.mp3"></audio>
+    <audio id="g" src="audio/g.mp3"></audio>
+    <audio id="b" src="audio/b.mp3"></audio>
+    <audio id="h" src="audio/h.mp3"></audio>
+    <audio id="n" src="audio/n.mp3"></audio>
+    <audio id="j" src="audio/j.mp3"></audio>
+    <audio id="m" src="audio/m.mp3"></audio>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/piano.js"></script>
+</body>
+
+</html>
