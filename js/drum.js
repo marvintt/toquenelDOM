@@ -3,7 +3,7 @@ let cymbal1 = document.getElementById("Component\ 13");
 let cymbal2 = document.getElementById("Component\ 16");
 let cymbal = document.getElementById("cymbal3");
 let tom = document.querySelectorAll(".inner");
-let teclas = ['f', 'i', 'o', 'p', 'k', 'l', 'a', '0'];
+let teclas = ['h', 'f', 'v', 'g', 'n', 'j', 'b', 'c'];
 
 ///animations
 let animationCymbal1 = () => {
