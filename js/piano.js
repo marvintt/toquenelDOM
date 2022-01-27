@@ -6,14 +6,14 @@ keys.forEach(tecla => {
     tecla.addEventListener('click', () => playMusic(tecla));
 });
 
-let stopAnimationKeyb = e => {
+/* let stopAnimationKeyb = e => {
     if (e.propertyName !== 'transform') return
     e.target.classList.remove("bactive")
 };
 
 keys.forEach(tecla => {
     tecla.addEventListener("keyup", stopAnimationKeyb)
-});
+}); */
 
 //funcion para detectar las teclas
 document.addEventListener('keydown', e => {
@@ -21,7 +21,7 @@ document.addEventListener('keydown', e => {
     let KeyIndex = keyb.indexOf(key);
     console.log(KeyIndex);
     if (KeyIndex > -1) { playMusic(keys[KeyIndex]); }
-    switch (KeyIndex) {
+    /* switch (KeyIndex) {
         case 0:
         case 2:
         case 4:
@@ -51,7 +51,7 @@ document.addEventListener('keydown', e => {
         case 22:
             keys[KeyIndex].classList.add("nactive");
             break;
-    }
+    } */
 });
 //funcion para reproducir audio
 function playMusic(tecla) {
