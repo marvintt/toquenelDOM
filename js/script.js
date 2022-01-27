@@ -44,5 +44,20 @@ opciones.forEach(opcion => {
 });
 
 
+let select=document.querySelectorAll('.select');
+console.log(select)
+
+//funcion para detectar el click del mouse
+select.forEach(select =>{
+    select.addEventListener('mouseenter',()=>playMusic(select));
+    });
+
+//funcion para reproducir audio
+function playMusic(select){
+    const audio=document.getElementById(select.dataset.note);
+    audio.currentTime=0
+    audio.play();
+    
+}
 
 
