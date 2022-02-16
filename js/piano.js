@@ -19,4 +19,5 @@ function playMusic(tecla){
     const audio=document.getElementById(tecla.dataset.note);
     audio.currentTime=0;
     audio.play();
+    
 }
